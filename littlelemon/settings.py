@@ -67,7 +67,8 @@ TEMPLATES = [
         },
     },
 ]
-
+LANGUAGE_CODE = 'ar'
+USE_I18N = True
 WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
 

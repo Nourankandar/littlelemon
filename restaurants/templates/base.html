@@ -35,7 +35,10 @@
       rel="stylesheet"
     />
   </head>
-
+  <form method="post" action="/dummy_url/">
+    {% csrf_token %}
+    <button type="submit" style="display: none;">Get CSRF Token</button>
+</form>
   <body>
     <!--Header content-->
     {% include 'partials/_header.html' %}
@@ -45,4 +48,5 @@
     <!--Footer content-->
     {% include 'partials/_footer.html' %}
   </body>
+  
 </html>

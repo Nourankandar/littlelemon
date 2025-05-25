@@ -7,8 +7,8 @@ from .models import Menu
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello") 
-    return HttpResponse("World") 
+    return render(request, 'base.html') 
+    
 
 def about(request):
     return render(request, 'about.html')
@@ -35,4 +35,3 @@ def display_menu_item(request,pk=None):
         menu_item=''
     return render(request,'menu_item.html', {'menu_item':menu_item})
 
-# Add your code here to create new views
